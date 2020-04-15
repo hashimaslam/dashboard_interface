@@ -6,3 +6,5 @@ clone the project then run the below commands
 
 * `npm install`
 * `npm start`
+
+open localhost 3000 to see the project
