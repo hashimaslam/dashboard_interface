@@ -1,0 +1,89 @@
+.sidebar-main-conatiner {
+  ul {
+    list-style-type: none;
+    padding-inline-start: 0px !important;
+  }
+  .sidebar-menu-wrapper {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &:hover {
+      background: $color-secondary1;
+      border-radius: 10px;
+    }
+    .sidebar-menu-info {
+      font-size: 14px;
+      font-weight: 600;
+      color: "#c7c5bf";
+    }
+  }
+}
+
+//sidebar
+
+.sidebar-title-conatiner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  .sidebar-primary-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 16px;
+  }
+  .sidebar-logo-container {
+    .sidebar-primary-logo {
+      padding: 10px;
+      background: $color-primary2;
+      border-radius: 50px;
+    }
+  }
+}
+// add new button
+.sidebar-addnew-wrapper {
+  padding: 20px;
+  background-color: $color-tertiary1;
+  border-radius: 10px;
+  .addnew-btn-conatiner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $color-primary1;
+    border-radius: 10px;
+    padding: 3px;
+    .addnew-btn {
+      padding-right: 15px;
+      padding-left: 15px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      font-size: 20px;
+      background-color: $color-tertiary2;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .addnew-btn-info {
+      font-size: 12px;
+      color: black;
+      margin-left: 13px;
+    }
+  }
+  .addnew-btn-down {
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  //sidebar
+  .sidebar-title-conatiner {
+    width: 89vw;
+  }
+  .logo-hide {
+    display: none;
+  }
+}

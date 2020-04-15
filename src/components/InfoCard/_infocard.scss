@@ -1,0 +1,71 @@
+.info-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-radius: 15px;
+  transform: translateY(-15px);
+  background-color: $color-secondary2;
+  .info-card-infoWrapper {
+    .info-card-primaryInfo {
+      font-size: 16px;
+      color: white;
+    }
+  }
+  .info-card-recent {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+  .info-renew-btn {
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-bottom: 18px;
+    padding-top: 18px;
+    font-size: 12px;
+    color: white;
+    background-color: $color-tertiary2;
+    border-radius: 10px;
+  }
+}
+
+//media queries
+
+@media only screen and (max-width: 600px) {
+  .info-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 15px;
+    transform: translateY(-15px);
+    background-color: $color-secondary2;
+    .info-card-infoWrapper {
+      .info-card-primaryInfo {
+        font-size: 12px;
+        color: white;
+      }
+    }
+    .info-card-recent {
+      padding-top: 10px;
+      padding-bottom: 0px;
+      padding-left: 10px;
+    }
+    .info-renew-btn {
+      padding-left: 18px;
+      padding-right: 18px;
+      padding-bottom: 0px;
+      padding-top: 10px;
+      font-size: 12px;
+      color: white;
+      background-color: $color-tertiary2;
+      border-radius: 10px;
+    }
+  }
+}

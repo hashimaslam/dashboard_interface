@@ -1,0 +1,16 @@
+//abstracts
+
+@import "./abstracts/base";
+@import "./abstracts//variables";
+
+//Pages
+@import "../Pages//DashBoard/dashboard";
+
+//components
+@import "../components//SwitchButton/switchbutton";
+@import "../components//InfoCard//infocard";
+@import "../components//SearchBar/searchbar";
+@import "../components//PriceCard/pricecard";
+@import "../components/AwardsCard/awardscard";
+@import "../components/Listitems/listitems";
+@import "../components//SideBar//sidebar";

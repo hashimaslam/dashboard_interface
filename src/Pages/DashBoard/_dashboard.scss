@@ -1,0 +1,99 @@
+//middle conatiner
+.dashboard-main1 {
+  background-color: $color-primary1;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  .primary-heading-wrapper {
+    .primary-heading {
+      font-size: 50px;
+      font-weight: 500;
+      color: black;
+    }
+    .heading-secondary {
+      font-size: 18px;
+      letter-spacing: 1.5px;
+      font-weight: 300;
+      color: $color-secondary3;
+    }
+  }
+}
+.switch-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .menu-dots-wrapper {
+    display: flex;
+    flex-direction: column !important;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 10px 18px #888888;
+    cursor: pointer;
+    .menu-dots {
+      font-size: 22px;
+      color: $color-tertiary1;
+      font-weight: 700;
+    }
+  }
+}
+
+.dashboard-main2 {
+  background-color: $color-primary1;
+  .notification-icon {
+    padding: 5px;
+  }
+  .heading-tertiary {
+    font-size: 12px;
+    color: #c7c5bf;
+    font-weight: 500;
+  }
+}
+
+.svg-wrapper {
+  background-color: $color-primary2;
+  padding-left: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+//media queries
+@media only screen and (max-width: 600px) {
+  //dashboard main 1
+  .dashboard-main1 {
+    border-radius: 0px;
+  }
+
+  //awards card
+  .awards-card-main-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  //dots button
+  .switch-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .menu-dots-wrapper {
+      display: flex;
+      flex-direction: column !important;
+
+      padding-left: 15px;
+      padding-right: 15px;
+      border-radius: 10px;
+      align-items: center;
+      background-color: white;
+      box-shadow: 0px 10px 18px #888888;
+      cursor: pointer;
+      .menu-dots {
+        font-size: 19px;
+        color: $color-tertiary1;
+        font-weight: 700;
+      }
+    }
+  }
+}

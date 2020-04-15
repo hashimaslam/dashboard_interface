@@ -1,0 +1,16 @@
+.search-bar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  font-size: 12px;
+  padding: 10px;
+  color: #c7c5bf;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .search-bar-container {
+    width: 200px;
+  }
+}

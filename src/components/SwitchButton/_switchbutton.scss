@@ -1,0 +1,147 @@
+.switch-button-wrapper {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  border-radius: 10px;
+  .switch-button1 {
+    font-size: 14px;
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: white !important;
+    transition: all 0.3s ease;
+    color: #c7c5bf;
+    cursor: pointer;
+  }
+  .switch-button2 {
+    transform: translateX(-10px);
+    font-size: 14px;
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white !important;
+    transition: all 0.3s ease;
+    color: #c7c5bf;
+    cursor: pointer;
+  }
+  .switch-button2::before {
+    content: "";
+    background-color: white;
+    z-index: -1;
+  }
+  .switch-button1::before {
+    content: "";
+    background-color: white;
+    z-index: -1;
+  }
+  .active-btn-right {
+    background-color: $color-tertiary1 !important;
+    color: white;
+    border-radius: 10px !important;
+    z-index: 1;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    animation-name: movefromright;
+    animation-duration: 0.5s;
+  }
+  .active-btn-left {
+    background-color: $color-tertiary1 !important;
+    color: white;
+    border-radius: 10px !important;
+    z-index: 1;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    animation-name: movefromleft;
+    animation-duration: 0.5s;
+  }
+}
+
+@keyframes movefromright {
+  0% {
+    transform: translateX(100px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes movefromleft {
+  0% {
+    transform: translateX(-100px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+//media queries
+@media only screen and (max-width: 600px) {
+  .switch-button-wrapper {
+    .switch-button1 {
+      font-size: 14px;
+      padding-right: 20px;
+      padding-left: 20px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      background-color: white !important;
+      transition: all 0.3s ease;
+      color: #c7c5bf;
+      cursor: pointer;
+    }
+    .switch-button2 {
+      transform: translateX(-10px);
+      font-size: 14px;
+      padding-right: 20px;
+      padding-left: 20px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      background-color: white !important;
+      transition: all 0.3s ease;
+      color: #c7c5bf;
+      cursor: pointer;
+    }
+    .switch-button2::before {
+      content: "";
+      background-color: white;
+      z-index: -1;
+    }
+    .switch-button1::before {
+      content: "";
+      background-color: white;
+      z-index: -1;
+    }
+    .active-btn-right {
+      background-color: $color-tertiary1 !important;
+      color: white;
+      border-radius: 10px !important;
+      z-index: 1;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      animation-name: movefromright;
+      animation-duration: 0.5s;
+    }
+    .active-btn-left {
+      background-color: $color-tertiary1 !important;
+      color: white;
+      border-radius: 10px !important;
+      z-index: 1;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      animation-name: movefromleft;
+      animation-duration: 0.5s;
+    }
+  }
+}
